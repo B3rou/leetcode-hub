@@ -1,38 +1,38 @@
 int romanToInt(char* s) {
-    int lenght = 0, repeated = 1, current = 0, next, sum = 0;
+    int length = 0, repeated = 1, current = 0, next, sum = 0;
 
-    while (s[lenght] != '\0')
+    while (s[length] != '\0')
     {   
-        if (s[lenght] == 'I')
+        if (s[length] == 'I')
         current = 1;
-        if (s[lenght] == 'V')
+        if (s[length] == 'V')
         current = 5;
-        if (s[lenght] == 'X')
+        if (s[length] == 'X')
         current = 10;
-        if (s[lenght] == 'L')
+        if (s[length] == 'L')
         current = 50;
-        if (s[lenght] == 'C')
+        if (s[length] == 'C')
         current = 100;
-        if (s[lenght] == 'D')
+        if (s[length] == 'D')
         current = 500;
-        if (s[lenght] == 'M')
+        if (s[length] == 'M')
         current = 1000;
         
-        if (s[lenght + 1] == 'I')
+        if (s[length + 1] == 'I')
         next = 1;
-        if (s[lenght + 1] == 'V')
+        if (s[length + 1] == 'V')
         next = 5;
-        if (s[lenght + 1] == 'X')
+        if (s[length + 1] == 'X')
         next = 10;
-        if (s[lenght + 1] == 'L')
+        if (s[length + 1] == 'L')
         next = 50;
-        if (s[lenght + 1] == 'C')
+        if (s[length + 1] == 'C')
         next = 100;
-        if (s[lenght + 1] == 'D')
+        if (s[length + 1] == 'D')
         next = 500;
-        if (s[lenght + 1] == 'M')
+        if (s[length + 1] == 'M')
         next = 1000;
-        if (s[lenght + 1] == '\0')
+        if (s[length + 1] == '\0')
         next = 0;
 
         if (current > next)
@@ -52,7 +52,7 @@ int romanToInt(char* s) {
 
 
 
-        lenght++;
+        length++;
     }
     return (sum);
 }
