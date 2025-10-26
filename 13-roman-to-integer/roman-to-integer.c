@@ -37,7 +37,7 @@ int romanToInt(char* s) {
 
         if (current > next)
         {
-        sum += current * repeated;
+        sum += current*repeated;
         repeated = 1;
         }
         else if (current == next)
@@ -46,12 +46,9 @@ int romanToInt(char* s) {
         }
         else if (current < next)
         {
-        sum -= current * repeated;
+        sum -= current*repeated;
         repeated = 1;    
         }
-
-
-
         length++;
     }
     return (sum);
