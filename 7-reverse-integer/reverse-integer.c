@@ -4,10 +4,6 @@ int reverse(int x) {
     int i = 0, last, reverse = 0;
     int negativity = 0;
 
-    /*if (x < 0){
-        x *= -1;
-        negativity = 1;
-    }*/
     while (x != 0) {
         reversed[i] = x % 10;
         x /= 10;
@@ -22,8 +18,6 @@ int reverse(int x) {
             return 0;
         reverse = reverse * 10 + reversed[i];
     }
-    /*if (negativity == 1)
-        reverse *= -1;*/
 
     return (reverse);
 }
