@@ -23,8 +23,8 @@ int reverse(int x) {
         reverse = reverse * 10 + reversed[i];
         
     }
-    if (negativity == 1)
-        reverse *= -1;
+    /*if (negativity == 1)
+        reverse *= -1;*/
     
     return (reverse);
 }
