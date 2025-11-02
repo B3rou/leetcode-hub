@@ -3,8 +3,8 @@ bool isPalindrome(int x) {
         return (false);
 
     int reversed[11];
-    int initial, i = 0, last, reverse = 0;
-    
+    int initial, i = 0, last;
+    long long reverse = 0;
     initial = x;
 
     while (x != 0) {
@@ -15,10 +15,6 @@ bool isPalindrome(int x) {
     last = i;
 
     for (i = 0; i < last; i++) {
-        if (reverse > 2147483647 / 10 || (reverse == 2147483647 / 10 && reversed[i] > 7))
-            return 0;
-        if (reverse < -2147483648 / 10 || (reverse == -2147483648 * 10 && reversed[i] < -8))
-            return 0;
         reverse = reverse * 10 + reversed[i];
     }
 
