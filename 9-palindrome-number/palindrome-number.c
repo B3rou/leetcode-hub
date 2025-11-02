@@ -4,7 +4,9 @@ bool isPalindrome(int x) {
 
     int reversed[11];
     int initial, i = 0, last, reverse = 0;
+    
     initial = x;
+
     while (x != 0) {
         reversed[i] = x % 10;
         x /= 10;
