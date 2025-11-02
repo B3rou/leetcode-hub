@@ -1,5 +1,5 @@
 int reverse(int x) {
-                              
+
     int reversed[11];
     int i = 0, last, reverse = 0;
     int negativity = 0;
@@ -16,15 +16,14 @@ int reverse(int x) {
     last = i;
 
     for (i = 0; i < last; i++) {
-        if (reverse > 2147483647/10 || (reverse == 2147483647/10 && reversed[i] > 7))
+        if (reverse > 2147483647 / 10 || (reverse == 2147483647 / 10 && reversed[i] > 7))
             return 0;
-        if (reverse < -2147483648/10 || (reverse == -2147483648*10 && reversed[i] < -8))
+        if (reverse < -2147483648 / 10 || (reverse == -2147483648 * 10 && reversed[i] < -8))
             return 0;
         reverse = reverse * 10 + reversed[i];
-        
     }
     /*if (negativity == 1)
         reverse *= -1;*/
-    
+
     return (reverse);
 }
