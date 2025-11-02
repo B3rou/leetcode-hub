@@ -2,7 +2,6 @@ int reverse(int x) {
 
     int reversed[11];
     int i = 0, last, reverse = 0;
-    int negativity = 0;
 
     while (x != 0) {
         reversed[i] = x % 10;
